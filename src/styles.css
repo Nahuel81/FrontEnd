@@ -1,0 +1,394 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+background: rgb(243,254,245);
+background: linear-gradient(90deg, rgba(243,254,245,1) 0%, rgba(230,230,242,1) 26%, rgba(243,254,245,1) 100%);
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  /* color: #a52a2a; */
+  color: #227b46;
+  font-family: monospace;
+  font-weight:bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .5s;
+}
+
+a:hover{
+  color: #227b46;
+  font-size: larger;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+
+header {
+  min-height: 100vh;
+  background-size: cover;
+  background-color: rgb(55, 54, 54);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: black;
+  color:#227b46;
+}
+
+.logoHeader {
+  width: 80px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 5px;
+  transition: .4s;
+}
+
+ul li:hover{
+  transform: scale(1.2);
+}
+/* efecto */
+
+  /* probar posicion */
+ 
+  /* fin */
+  .welcome h3{
+    color: rgb(141, 134, 134);
+  }
+  .welcome h1{
+  margin:0; /* solo cero */
+  color: rgba(225, 225, 225, 0.01);
+  background-image: url("../src/assets/verde.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 15s ease-in-out infinite;
+  text-align:justify;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size:150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes animate{
+  0%,
+  100%{ background-position: left top }
+  25% { background-position: right bottom; }
+  50% { background-position: left bottom; }
+  75% { background-position: right top; }
+}
+/* fin efecto */
+
+.welcome {
+  width: 100%;
+  text-align: center;
+  /* margin: 0 auto; */
+  position: relative;
+  top: 100px;
+ /*  color: black; */
+  padding: 20px;
+  /* probar */
+display: flex;
+justify-content: center;
+align-items: center;
+  /* probar fin */
+}
+
+i {
+  font-size: 1em;
+  transition: .4s;
+}
+
+i.iconoLogueo {
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+ i:hover{
+  color: brown;
+  transform: scale(1.2);
+}
+
+/* Acerca de mí */
+
+.descripcion {
+  position: relative;
+}
+
+.fotoPerfil {
+  width: 220px;
+  border-radius: 48%;
+  position: absolute;
+  top: -180px;
+  left: 20px;
+  border: 3px solid #227b46;
+}
+
+.descripcion__info {
+  margin: 100px 20px 20px 20px;
+}
+ #fs{
+   padding-left: 30px;
+  }
+.aboutMe {
+  margin: 50px 20px;
+  display: flex;
+}
+
+
+
+.location {
+  font-size: .9em;
+}
+.fa-location-dot{
+padding-right: .5em;
+color: #227b46;
+}
+
+/* Experiencia */
+
+.contenedor {
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #227b46;
+  border-radius: 20px;
+  background-color:#ffffff80;
+  box-shadow: 10px 10px 21px 0px  rgba(0, 0, 0, 0.75); 
+}
+
+.contenedor__barraTitulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contenedor__child {
+  display: flex;
+  margin: 30px 0;
+}
+
+.contenedor img {
+  width: 100px;
+  object-fit: contain;
+  max-height: 100px;
+}
+
+.descripcionPuesto {
+  margin: 0 20px;
+}
+
+.descripcionPuesto__info {
+  display: inline;
+  margin-right: 20px;
+}
+
+.iconosEdicion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.iconosEdicion i {
+  margin: 10px 5px;
+  align-self: flex-start;
+  color:#227b46;
+}
+/* PROYECTOS */
+#tateti{
+  border-radius: 20%;
+  border: 2px solid grey;
+}
+/* FOOTER */
+footer {
+  padding: 50px 0;
+}
+
+.copyright {
+  padding-top: 20px;}
+
+.top {
+  text-align: center;
+}
+/* FIN FOOTER */
+
+
+/* FORMULARIO */
+
+/* FIN FORMULARIO */
+
+
+/* SKILLS */
+
+  .skills-container{
+  display: grid;
+  grid-tempLate-columns: repeat(5, 1fr);
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  grid-gap:1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+  }
+  .skills-box{
+  padding: 1rem;
+  color:#000;
+  cursor:pointer;
+  }
+  
+  .skills-title{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  }
+  
+  .skills-icons{
+  width:60px;
+  z-index:2;
+  height: 60px;
+  }
+  
+  .skills-img{
+  width:90px;
+  height:90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: .5s;
+  }
+  
+  .skills-title h3{
+  color: #333;
+  margin-top: 0.5rem;
+  font-size: 1em;
+  }
+  @media screen and (max-width:990px){
+   .skills-container{
+   grid-tempLate-columns: repeat(2, 1fr);
+   padding: 2rem 50px;
+   }
+  }
+  
+  @media screen and (max-width:650px){
+   .skills-container{
+   grid-tempLate-columns:2fr;
+   padding: 2rem 50px;
+   }
+  }
+
+/* FIN SKILLS */
+
+
+/* MEDIA QUERYS*/
+
+@media (max-width: 750px) {
+
+  .fotoPerfil{
+    width: 150px;
+    top: -160px;
+  }
+
+  nav ul li a span{
+    display: none;
+  }
+
+  .welcome{
+    width: 60%;
+    font-size: .5em;
+  }
+
+  h2{
+    font-size: 1.6em;
+  }
+
+  .aboutMe__child p{
+    text-align: justify;
+  }
+
+  .contenedor__child{
+    flex-direction: column;
+    align-items: center
+  }
+
+  .contenedor__child img{
+    width: 150px;
+    margin: 20px;
+  }
+
+  .iconosEdicion{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px){
+  header{
+    min-height: 70vh;
+  }
+
+  h1{
+    font-size: 2em;;
+  }
+
+  .welcome{
+    top: 125px;
+  }
+  
+  .fotoPerfil{
+    width: 100px;
+    top: -110px;
+  }
+  
+  .logoHeader{
+    display: none;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+  .iconoLogueo{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  @media (max-width: 500px){
+    .fotoPerfil{
+      width: 100px;
+      top: -140px;
+    }
+  }
+
+}
+/* PRUEBA SKILLS */
