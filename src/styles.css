@@ -1,11 +1,8 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 body {
@@ -19,7 +16,7 @@ h3 {
 
 h2 {
   /* color: #a52a2a; */
-  color: #227b46;
+  color: brown;
   font-family: monospace;
   font-weight:bold;
 }
@@ -31,29 +28,27 @@ a {
 }
 
 a:hover{
-  color: #227b46;
-  font-size: larger;
+  color: brown;
 }
 
 img {
   max-width: 100%;
 }
 
-/* Header */
-
-header {
-  min-height: 100vh;
-  background-size: cover;
-  background-color: rgb(55, 54, 54);
-}
+/* HEADER */
+  header {
+    min-height: 100vh;
+    background-image: url(../src/assets/backdv.jpg);
+    background-size: cover;
+  }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px;
-  background-color: black;
-  color:#227b46;
+  background-color: rgb(217, 209, 209);
+  color: black;
 }
 
 .logoHeader {
@@ -63,7 +58,7 @@ nav {
 ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 ul li {
@@ -75,51 +70,8 @@ ul li {
 ul li:hover{
   transform: scale(1.2);
 }
-/* efecto */
 
-  /* probar posicion */
- 
-  /* fin */
-  .welcome h3{
-    color: rgb(141, 134, 134);
-  }
-  .welcome h1{
-  margin:0; /* solo cero */
-  color: rgba(225, 225, 225, 0.01);
-  background-image: url("../src/assets/verde.jpg");
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  animation: animate 15s ease-in-out infinite;
-  text-align:justify;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size:150px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-@keyframes animate{
-  0%,
-  100%{ background-position: left top }
-  25% { background-position: right bottom; }
-  50% { background-position: left bottom; }
-  75% { background-position: right top; }
-}
-/* fin efecto */
-
-.welcome {
-  width: 100%;
-  text-align: center;
-  /* margin: 0 auto; */
-  position: relative;
-  top: 100px;
- /*  color: black; */
-  padding: 20px;
-  /* probar */
-display: flex;
-justify-content: center;
-align-items: center;
-  /* probar fin */
-}
-
+  
 i {
   font-size: 1em;
   transition: .4s;
@@ -147,28 +99,32 @@ i.iconoLogueo {
   position: absolute;
   top: -180px;
   left: 20px;
-  border: 3px solid #227b46;
+  border: 3px solid brown;
 }
 
 .descripcion__info {
-  margin: 100px 20px 20px 20px;
+  margin: 100px 10px 10px 10px;
+  border-radius: 20px;  /* aca */
+  padding: 20px;
 }
  #fs{
    padding-left: 30px;
   }
 .aboutMe {
-  margin: 50px 20px;
+  margin: 10px;/* 50px 20px; */
+  padding: 20px; /* probando */
+  box-shadow: 10px 10px 21px 0px  rgba(0, 0, 0, 0.75); /* probando */
   display: flex;
+  border: 2px solid grey;
+  border-radius: 20px;
 }
-
-
 
 .location {
   font-size: .9em;
 }
 .fa-location-dot{
 padding-right: .5em;
-color: #227b46;
+color: brown;
 }
 
 /* Experiencia */
@@ -176,7 +132,7 @@ color: #227b46;
 .contenedor {
   margin: 10px;
   padding: 20px;
-  border: 2px solid #227b46;
+  border: 2px solid grey;
   border-radius: 20px;
   background-color:#ffffff80;
   box-shadow: 10px 10px 21px 0px  rgba(0, 0, 0, 0.75); 
@@ -218,7 +174,7 @@ color: #227b46;
 .iconosEdicion i {
   margin: 10px 5px;
   align-self: flex-start;
-  color:#227b46;
+  color: brown;
 }
 /* PROYECTOS */
 #tateti{
@@ -237,11 +193,6 @@ footer {
   text-align: center;
 }
 /* FIN FOOTER */
-
-
-/* FORMULARIO */
-
-/* FIN FORMULARIO */
 
 
 /* SKILLS */
@@ -290,7 +241,7 @@ footer {
   }
   
   .skills-title h3{
-  color: #333;
+  color: black;
   margin-top: 0.5rem;
   font-size: 1em;
   }
@@ -325,7 +276,7 @@ footer {
   }
 
   .welcome{
-    width: 60%;
+    width: 100%;
     font-size: .5em;
   }
 
@@ -362,7 +313,8 @@ footer {
   }
 
   .welcome{
-    top: 125px;
+    top: 100px;
+    width: 100%;
   }
   
   .fotoPerfil{
@@ -387,6 +339,9 @@ footer {
     .fotoPerfil{
       width: 100px;
       top: -140px;
+    }
+    .welcome{
+      width: 100%;
     }
   }
 

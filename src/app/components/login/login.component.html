@@ -1,0 +1,46 @@
+<!-- <div class="cont">
+ <div class="h2">
+    <div class="login">
+      <div class="form">
+        <h2>BIENVENIDO</h2>
+
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+          <input type="email" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
+          <label class="form-label" for="nombreUsuario">Usuario</label>
+         <input type="password" id="password" [(ngModel)]="password" name="password"  required/>
+            <label class="form-label" for="password">password</label>
+       
+          <button class="btn px-5" type="submit">iniciar sesion</button>
+        </form>
+
+      </div>
+    </div>
+  </div> 
+</div> -->
+
+<div class="contain">
+<div class="head">
+  <h2>Iniciar Sesion</h2>
+</div>
+<form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+  <div class="input">
+    <p><b>Nombre de Usuario</b></p>
+    <input type="email" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
+  </div>
+  <div class="input">
+    <p><b>Contraseña</b></p>
+    <input type="password" [(ngModel)]="password" name="password"  required/>
+  </div>
+  <div class="input">
+    <p class="p"> Para ingresar utilize:<br>
+      <b>Usuario</b>= user<br>
+      <b>Contraseña</b>= password<br>
+      Si desea Editar el Portfolio necesitas una cuenta Administrador.
+      para obtener una inicie sesion con la cuenta por defecto y
+      contactese haciendo click en mis Redes.</p>
+    
+  </div>
+  <button class="btn" type="submit">iniciar sesion</button>
+  
+</form>
+</div>
